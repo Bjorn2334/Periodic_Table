@@ -56,3 +56,11 @@ body {
 .element-popup.active {
     display: block;
 }
+
+/* Example CSS for periodic table layout using CSS Grid */
+.periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, 50px); /* Adjust the number of columns */
+    grid-gap: 2px;
+}
+
