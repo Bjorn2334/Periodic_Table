@@ -123,6 +123,7 @@ body {
     padding: 7px;
 }
 
+/* Gradient color to be changed later */
 .element {
     background-image: linear-gradient(135deg, #f0f0f0, #ffffff);
 }
