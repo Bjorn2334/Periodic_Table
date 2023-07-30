@@ -127,3 +127,34 @@ body {
 .element {
     background-image: linear-gradient(135deg, #f0f0f0, #ffffff);
 }
+
+/* Styles for metals */
+.element[data-category="metal"] {
+    background-color: #b3e6cc; /* Green */
+}
+
+/* Styles for non-metals */
+.element[data-category="non-metal"] {
+    background-color: #ffb3b3; /* Red */
+}
+
+/* Styles for transition metals */
+.element[data-category="transition"] {
+    background-color: #cccccc; /* Gray */
+}
+
+
+/* Hover effect for metals */
+.element[data-category="metal"]:hover {
+    background-color: #80ffaa; /* Lighter green on hover */
+}
+
+/* Hover effect for non-metals */
+.element[data-category="non-metal"]:hover {
+    background-color: #ff9999; /* Lighter red on hover */
+}
+
+/* Hover effect for transition metals */
+.element[data-category="transition"]:hover {
+    background-color: #e6e6e6; /* Lighter gray on hover */
+}
