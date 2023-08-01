@@ -12,15 +12,17 @@ body {
 .periodic-table {
     display: grid;
     grid-template-columns: repeat(18, 50px);
-    grid-gap: 2px;
+    /* Adjust the number of columns */
+    grid-row-gap: 8px;
+    grid-column-gap: 18px
 }
 
 .element {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-color: #fff;
     border: 1px solid #ccc;
     cursor: pointer;
@@ -55,15 +57,6 @@ body {
 
 .element-popup.active {
     display: block;
-}
-
-/* Example CSS for periodic table layout using CSS Grid */
-.periodic-table {
-    display: grid;
-    grid-template-columns: repeat(18, 50px);
-    /* Adjust the number of columns */
-    grid-gap: 10px;
-    grid-column-gap: 10px
 }
 
 
@@ -130,31 +123,37 @@ body {
 
 /* Styles for metals */
 .element[data-category="metal"] {
-    background-color: #b3e6cc; /* Green */
+    background-color: #b3e6cc;
+    /* Green */
 }
 
 /* Styles for non-metals */
 .element[data-category="non-metal"] {
-    background-color: #ffb3b3; /* Red */
+    background-color: #ffb3b3;
+    /* Red */
 }
 
 /* Styles for transition metals */
 .element[data-category="transition"] {
-    background-color: #cccccc; /* Gray */
+    background-color: #cccccc;
+    /* Gray */
 }
 
 
 /* Hover effect for metals */
 .element[data-category="metal"]:hover {
-    background-color: #80ffaa; /* Lighter green on hover */
+    background-color: #80ffaa;
+    /* Lighter green on hover */
 }
 
 /* Hover effect for non-metals */
 .element[data-category="non-metal"]:hover {
-    background-color: #ff9999; /* Lighter red on hover */
+    background-color: #ff9999;
+    /* Lighter red on hover */
 }
 
 /* Hover effect for transition metals */
 .element[data-category="transition"]:hover {
-    background-color: #e6e6e6; /* Lighter gray on hover */
+    background-color: #e6e6e6;
+    /* Lighter gray on hover */
 }
