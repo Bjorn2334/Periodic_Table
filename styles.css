@@ -140,8 +140,14 @@ body {
 }
 
 /* Styles for Actinide metals */
-.element[data-category="Actinide"] {
-    background-color: #6385ec;
+.element[data-category="actinide"] {
+    background-color: #95a8e2;
+    /* Gray */
+}
+
+/* Styles for lanthanide metals */
+.element[data-category="lanthanide"] {
+    background-color: #d77979;
     /* Gray */
 }
 
@@ -164,8 +170,14 @@ body {
     /* Lighter gray on hover */
 }
 
+/* Hover effect for actinide */
+.element[data-category="actinide"]:hover {
+    background-color: #5461ec;
+    /* Lighter green on hover */
+}
+
 /* Hover effect for metals */
-.element[data-category="Actinide"]:hover {
-    background-color: #1c2cdb;
+.element[data-category="lanthanide"]:hover {
+    background-color: #b74e4e;
     /* Lighter green on hover */
 }
