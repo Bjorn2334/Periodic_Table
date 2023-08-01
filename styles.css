@@ -147,7 +147,7 @@ body {
 
 /* Styles for lanthanide metals */
 .element[data-category="lanthanide"] {
-    background-color: #d77979;
+    background-color: #c479d7;
     /* Gray */
 }
 
@@ -178,6 +178,6 @@ body {
 
 /* Hover effect for metals */
 .element[data-category="lanthanide"]:hover {
-    background-color: #b74e4e;
+    background-color: #a657b9;
     /* Lighter green on hover */
 }
