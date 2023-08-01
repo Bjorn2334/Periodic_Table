@@ -139,6 +139,12 @@ body {
     /* Gray */
 }
 
+/* Styles for Actinide metals */
+.element[data-category="Actinide"] {
+    background-color: #6385ec;
+    /* Gray */
+}
+
 
 /* Hover effect for metals */
 .element[data-category="metal"]:hover {
@@ -156,4 +162,10 @@ body {
 .element[data-category="transition"]:hover {
     background-color: #e6e6e6;
     /* Lighter gray on hover */
+}
+
+/* Hover effect for metals */
+.element[data-category="Actinide"]:hover {
+    background-color: #1c2cdb;
+    /* Lighter green on hover */
 }
