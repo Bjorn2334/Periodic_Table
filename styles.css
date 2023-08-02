@@ -114,25 +114,38 @@ body {
     padding: 7px;
 }
 
-/* Style for the atomic number */
-.atomic-number 
-    .atomic-number {
-        position: absolute;
-        top: 8px;
-        left: 8px;
-        font-size: 12px;
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 2px 4px;
-        border-radius: 3px;
-        z-index: 1; /* Ensure the atomic number appears above other elements */
-    }
+
+
+.atomic-number {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    font-size: 12px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* Other styles for the element box */
+.element {
+    /* ... (Your existing styles for the element box) ... */
+    position: relative;
+}
+
+/* Style for the element symbol and name */
+.symbol,
+.name {
+    position: relative;
+    z-index: 2;
+    color: #fff; /* Set the default text color to white */
+}
+
 
 
 /* Styles for metals */
 .element[data-category="metal"] {
     background-color: #b3e6cc;
-    position: relative;
     /* Green */
 }
 
@@ -147,8 +160,10 @@ body {
     background: linear-gradient(135deg, #2b2e3a, #7c3a7c);
     background-size: 100% 100%;
     animation: gradientAnimation 20s linear infinite, pulsateGlow 4s ease-in-out infinite;
-    color: #ffffff; /* White text color for better contrast */
-    font-family: 'Arial', sans-serif; /* Font family for text */
+    color: #ffffff;
+    /* White text color for better contrast */
+    font-family: 'Arial', sans-serif;
+    /* Font family for text */
 }
 
 /* Color Scheme for Dark-Themed Periodic Table */
@@ -156,52 +171,63 @@ body {
 /* Color Scheme for Dark-Themed Periodic Table */
 /* Alkali metals */
 .element[data-element-group="alkali-metal"] {
-    background-color: #ff4f4f; /* Light Red */
+    background-color: #ff4f4f;
+    /* Light Red */
 }
 
 /* Alkaline earth metals */
 .element[data-element-group="alkaline-earth-metal"] {
-    background-color: #ff9d4f; /* Light Orange */
+    background-color: #ff9d4f;
+    /* Light Orange */
 }
 
 /* Transition metals */
 .element[data-element-group="transition-metal"] {
-    background-color: #4fb3ff; /* Light Blue */
+    background-color: #4fb3ff;
+    /* Light Blue */
 }
 
 /* Other metals */
 .element[data-element-group="other-metal"] {
-    background-color: #d966d9; /* Light Purple */
+    background-color: #d966d9;
+    /* Light Purple */
 }
 
 /* Metalloids */
 .element[data-element-group="metalloid"] {
-    background-color: #ff784f; /* Light Yellow-Orange */
+    background-color: #ff784f;
+    /* Light Yellow-Orange */
 }
 
 /* Non-metals */
 .element[data-element-group="non-metal"] {
-    background-color: #e3c7c7; /* Light Red */
+    background-color: #e3c7c7;
+    /* Light Red */
 }
 
 /* Noble gases */
 .element[data-element-group="noble-gas"] {
-    background-color: #ffff6f; /* Light Yellow */
+    background-color: #ffff6f;
+    /* Light Yellow */
 }
 
 /* Lanthanoids */
 .element[data-element-group="lanthanoid"] {
-    background-color: #53ffbd; /* Light Turquoise */
+    background-color: #53ffbd;
+    /* Light Turquoise */
 }
 
 /* Actinoids */
 .element[data-element-group="actinoid"] {
-    background-color: #7be8e6; /* Light Blue */
+    background-color: #7be8e6;
+    /* Light Blue */
 }
+
 /* Hover Effects */
 .element:hover {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 25px rgba(255, 255, 255, 0.6), 0 0 35px rgba(255, 255, 255, 0.4);
-    background-color: #1a1c2c; /* Darker background color on hover */
+    background-color: #1a1c2c;
+    /* Darker background color on hover */
     transform: scale(1.05);
     transition: box-shadow 0.5s ease, background-color 0.3s ease, transform 0.3s ease;
 
@@ -209,8 +235,10 @@ body {
 
 /* Adjust text color on hover */
 .element:hover .name {
-    color: #fff; /* White text color on hover */
+    color: #fff;
+    /* White text color on hover */
 }
+
 .element:hover .symbol {
     color: #fff;
     /* White text color on hover */
@@ -221,30 +249,43 @@ body {
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
-        background-color: #7c3a7c; /* Purple */
+        background-color: #7c3a7c;
+        /* Purple */
     }
+
     25% {
         background-position: 100% 50%;
-        background-color: #ff6666; /* Coral Red */
+        background-color: #ff6666;
+        /* Coral Red */
     }
+
     50% {
         background-position: 0% 50%;
-        background-color: #7c3a7c; /* Purple */
+        background-color: #7c3a7c;
+        /* Purple */
     }
+
     75% {
         background-position: 100% 50%;
-        background-color: #80c2ff; /* Sky Blue */
+        background-color: #80c2ff;
+        /* Sky Blue */
     }
+
     100% {
         background-position: 0% 50%;
-        background-color: #7c3a7c; /* Back to Purple */
+        background-color: #7c3a7c;
+        /* Back to Purple */
     }
 }
+
 /* Soft pulsating glow animation */
 @keyframes pulsateGlow {
-    0%, 100% {
+
+    0%,
+    100% {
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
     }
+
     50% {
         box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
     }
