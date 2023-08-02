@@ -119,14 +119,17 @@ body {
 
 .atomic_number {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    font-size: 14px;
+    
+    top: 2px;
+    left: 2px;
+    font-size: 11px;
     color: #000000;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 2px 4px;
     border-radius: 3px;
     background-color: transparent;
+    min-width: 20px;
+    font-weight:bold
 }
 
 /* Style for the element symbol and name */
