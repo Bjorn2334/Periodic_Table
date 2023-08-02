@@ -18,7 +18,7 @@ body {
     grid-template-columns: repeat(18, 50px);
     /* Adjust the number of columns */
     grid-row-gap: 8px;
-    grid-column-gap: 18px
+    grid-column-gap: 20px
 }
 
 .element {
