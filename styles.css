@@ -129,7 +129,7 @@ body {
 /* Dark-themed color combination for enhanced live gradient background */
 body {
     background: linear-gradient(135deg, #2b2e3a, #7c3a7c);
-    background-size: 600% 600%;
+    background-size: 100% 100%;
     animation: gradientAnimation 20s linear infinite, pulsateGlow 4s ease-in-out infinite;
     color: #ffffff; /* White text color for better contrast */
     font-family: 'Arial', sans-serif; /* Font family for text */
@@ -205,11 +205,11 @@ body {
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
-        background-color: #7c3a7c; /* Starting color (purple) */
+        background-color: #7c3a7c; /* Purple */
     }
     25% {
         background-position: 100% 50%;
-        background-color: #4f4fff; /* Blue */
+        background-color: #ff6666; /* Coral Red */
     }
     50% {
         background-position: 0% 50%;
@@ -217,7 +217,7 @@ body {
     }
     75% {
         background-position: 100% 50%;
-        background-color: #4f4f7c; /* Dark Violet */
+        background-color: #80c2ff; /* Sky Blue */
     }
     100% {
         background-position: 0% 50%;
