@@ -181,3 +181,29 @@ body {
     background-color: #a657b9;
     /* Lighter green on hover */
 }
+
+/* Styles for alkali metals */
+.element[data-element-group="alkali-metal"] {
+    background-color: #ff6666; /* Light red */
+}
+
+/* Styles for noble gases */
+.element[data-element-group="noble-gas"] {
+    background-color: #b3b3cc; /* Light blue-gray */
+}
+
+/* Add styles for other groups as needed */
+
+
+/* Hover effect for alkali metals */
+.element[data-element-group="alkali-metal"]:hover {
+    background-color: #ff9999; /* Lighter red on hover */
+}
+
+/* Hover effect for noble gases */
+.element[data-element-group="noble-gas"]:hover {
+    background-color: #cccccc; /* Lighter gray on hover */
+}
+
+/* Add hover effects for other groups as needed */
+
