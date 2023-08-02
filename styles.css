@@ -120,9 +120,9 @@ body {
 .atomic_number {
     position: absolute;
     
-    top: 2px;
-    left: 2px;
-    font-size: 11px;
+    top: 1px;
+    left: 1px;
+    font-size: 13px;
     color: #000000;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 2px 4px;
