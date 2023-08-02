@@ -112,6 +112,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 7px;
+    position: relative;
 }
 
 
@@ -127,18 +128,11 @@ body {
     border-radius: 3px;
 }
 
-/* Other styles for the element box */
-.element {
-    /* ... (Your existing styles for the element box) ... */
-    position: relative;
-}
-
 /* Style for the element symbol and name */
 .symbol,
 .name {
     position: relative;
     z-index: 2;
-    color: #fff; /* Set the default text color to white */
 }
 
 
