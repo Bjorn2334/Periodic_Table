@@ -121,7 +121,7 @@ body {
     position: absolute;
     top: 4px;
     left: 4px;
-    font-size: 15px;
+    font-size: 12px;
     color: #000000;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 2px 4px;
@@ -241,6 +241,9 @@ body {
 .element:hover .symbol {
     color: #fff;
     /* White text color on hover */
+}
+.element:hover .atomic-number {
+    color: #ffffff; /* Change the text color to black on hover */
 }
 
 /* Enhanced gradient animation with rotation effect */
