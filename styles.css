@@ -117,12 +117,12 @@ body {
 
 
 
-.atomic-number {
+.atomic_number {
     position: absolute;
     top: 4px;
     left: 4px;
     font-size: 12px;
-    color: #ffffff;
+    color: #000000;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 2px 4px;
     border-radius: 3px;
@@ -228,10 +228,6 @@ body {
 
 }
 
-.element:hover .atomic-number{
-    color: #fff;
-}
-
 /* Adjust text color on hover */
 .element:hover .name {
     color: #fff;
@@ -242,7 +238,7 @@ body {
     color: #fff;
     /* White text color on hover */
 }
-.element:hover .atomic-number {
+.element:hover .atomic_number {
     color: #fff; /* Change the text color to black on hover */
 }
 /* Enhanced gradient animation with dynamic color change */
