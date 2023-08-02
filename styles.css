@@ -243,10 +243,8 @@ body {
     /* White text color on hover */
 }
 .element:hover .atomic-number {
-    color: #ffffff; /* Change the text color to black on hover */
+    color: #fff; /* Change the text color to black on hover */
 }
-
-/* Enhanced gradient animation with rotation effect */
 /* Enhanced gradient animation with dynamic color change */
 @keyframes gradientAnimation {
     0% {
