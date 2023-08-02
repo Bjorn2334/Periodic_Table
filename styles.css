@@ -228,6 +228,10 @@ body {
 
 }
 
+.element:hover .atomic-number{
+    color: #fff;
+}
+
 /* Adjust text color on hover */
 .element:hover .name {
     color: #fff;
