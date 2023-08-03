@@ -157,7 +157,7 @@ body {
 body {
     background: linear-gradient(135deg, #2b2e3a, #7c3a7c);
     background-size: 100% 100%;
-    animation: gradientAnimation 20s linear infinite, pulsateGlow 4s ease-in-out infinite;
+    animation: gradientAnimation 10s linear infinite, pulsateGlow 4s ease-in-out infinite;
     color: #ffffff;
     /* White text color for better contrast */
     font-family: 'Arial', sans-serif;
@@ -248,19 +248,19 @@ body {
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
-        background-color: #7c3a7c;
+        background-color: #351735;
         /* Purple */
     }
 
     25% {
         background-position: 100% 50%;
-        background-color: #ff6666;
+        background-color: #ff0c0c;
         /* Coral Red */
     }
 
     50% {
         background-position: 0% 50%;
-        background-color: #7c3a7c;
+        background-color: #5c185c;
         /* Purple */
     }
 
