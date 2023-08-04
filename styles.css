@@ -227,8 +227,10 @@ body {
 }
 
 .element:hover .atomic_number {
-    color: #fff; /* Change the text color to black on hover */
+    color: #fff;
+    /* Change the text color to black on hover */
 }
+
 /* Enhanced gradient animation with dynamic color change */
 @keyframes gradientAnimation {
     0% {
@@ -262,4 +264,47 @@ body {
     }
 }
 
+/* Existing CSS styles go here */
 
+/* Styles for the group labels */
+[data-category="group-label"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Gradient background */
+
+    /* background: linear-gradient(135deg, #355c81, #5b839c); */
+    
+    /* Add a box shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Adjust padding and border radius */
+    padding: 8px;
+    border-radius: 10px;
+    /* Offset the labels slightly upward */
+    margin-top: -12px;
+    font-family: 'Roboto', sans-serif;
+    /* Example font */
+    font-size: 16px;
+    color: #fff;
+    /* White text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Add a text shadow */
+    cursor: pointer;
+    /* Show pointer on hover */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Set a consistent width for all group labels */
+    width: 50px;
+}
+
+[data-category="group-label"]:hover {
+    /* Darken the background on hover */
+    background: linear-gradient(135deg, #2b4c6c, #4a6b84);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    /* Add a slightly larger box shadow on hover */
+}
+
+[data-category="group-label"] .number {
+    font-weight: bold;
+}
+
+/* Existing CSS styles go here */
