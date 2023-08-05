@@ -298,6 +298,16 @@ body {
 }
 
 
+/* Styles for the table wrapper */
+.periodic-table-container {
+    border: 2px solid #ccc; /* Add a border around the table */
+    border-radius: 10px; /* Add border radius to create rounded corners */
+    padding: 20px; /* Add padding to create some space between the table and the border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a box shadow for a subtle effect */
+    width: 1255px;
+}
+
+
 
 
 /* Box that encloses the Lanthanoids and Actinoids group labels */
