@@ -1,5 +1,3 @@
-// script.js
-
 // Function to calculate brightness based on the background color
 function getBrightness(color) {
     // Convert the color to an RGB array
@@ -22,10 +20,27 @@ function adjustTextColor() {
 // Call the adjustTextColor function when the document is fully loaded
 document.addEventListener('DOMContentLoaded', adjustTextColor);
 
-// Function to calculate brightness based on the background color
-function getBrightness(color) {
-    // Convert the color to an RGB array
-    const rgb = color.match(/[0-9]+/g).map(Number);
-    // Calculate brightness using the formula (R * 299 + G * 587 + B * 114) / 1000
-    return (rgb[0] * 299 + rgb[1] * 587 + rgb[2] * 114) / 1000;
-}
+// Rest of your previous code...
+$('.expandHome').mouseover(function () {
+    $('.sub-home').css({
+        'display': 'block'
+    });
+});
+$('.subnavbtn').mouseover(function () {
+    $('.sub-home').css({
+        'display': 'none'
+    });
+});
+
+$('#trapezoid').mouseleave(function () {
+    $('#trapezoid').css({
+        'margin-top': '-53px'
+    });
+    $('.sub-home').css({
+        'display': 'none'
+    });
+}).mouseenter(function () {
+    $('#trapezoid').css({
+        'margin-top': '0px'
+    });
+});
