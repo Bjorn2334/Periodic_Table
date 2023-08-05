@@ -264,9 +264,6 @@ body {
     }
 }
 
-/* Existing CSS styles go here */
-
-/* Existing CSS styles go here */
 
 /* Styles for the group labels */
 [data-category="group-label"] {
@@ -301,3 +298,48 @@ body {
 }
 
 
+
+
+/* Box that encloses the Lanthanoids and Actinoids group labels */
+.lanthanoids-box,
+.actinoids-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(135deg, #2b4c6c, #4a6b84); */
+    /* Set the gradient background */
+    color: #fff;
+    /* Set the text color */
+    font-family: 'Roboto', sans-serif;
+    /* Example font */
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    /* Add border radius to create rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Add a box shadow */
+    cursor: pointer;
+    /* Show pointer on hover */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Add transitions */
+    width: 100px;
+    /* Set a wider width for both group labels */
+}
+
+/* Darken the background and add a larger box shadow on hover */
+.lanthanoids-box:hover,
+.actinoids-box:hover {
+    background: linear-gradient(135deg, #20425e, #3e5d75);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Styles for Lanthanoids and Actinoids group labels */
+.lanthanoids-label,
+.actinoids-label {
+    color: #fff;
+    /* Set the text color */
+    font-weight: bold;
+    /* Make the font bold */
+}
+
+/* Existing CSS styles go here */
