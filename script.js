@@ -20,27 +20,3 @@ function adjustTextColor() {
 // Call the adjustTextColor function when the document is fully loaded
 document.addEventListener('DOMContentLoaded', adjustTextColor);
 
-// Rest of your previous code...
-$('.expandHome').mouseover(function () {
-    $('.sub-home').css({
-        'display': 'block'
-    });
-});
-$('.subnavbtn').mouseover(function () {
-    $('.sub-home').css({
-        'display': 'none'
-    });
-});
-
-$('#trapezoid').mouseleave(function () {
-    $('#trapezoid').css({
-        'margin-top': '-53px'
-    });
-    $('.sub-home').css({
-        'display': 'none'
-    });
-}).mouseenter(function () {
-    $('#trapezoid').css({
-        'margin-top': '0px'
-    });
-});
