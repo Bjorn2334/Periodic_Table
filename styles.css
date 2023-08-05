@@ -537,7 +537,8 @@ hr {
 }
 
 .cf {
-    *zoom: 1;
+
+    zoom: 1;
 }
 
 .menu,
