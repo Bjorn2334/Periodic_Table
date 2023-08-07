@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add this inside the head tag of your HTML file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+
+    <ul class="menu cf">
+        <li><a href=#home>Home</a></li>
+        <li>
+            <a href=#services>Services</a>
+            <ul class="submenu">
+                <li><a href=#web-design>Web design</a></li>
+                <li><a href=graphhic-design>Graphics design</a></li>
+                <li><a href=#app>App development</a></li>
+                <li><a href=#marketing>Marketing</a></li>
+            </ul>
+        </li>
+        <li><a href=#blog>Blog</a></li>
+        <li><a href=#about>About us</a></li>
+        <li><a href=#contact>Contact us</a></li>
+    </ul>
+
+
+    
+
+    <div class="periodic-table-container">
+
+
+        <div class="periodic-table">
+
+            <div style="grid-row: 1; grid-column: 1;" data-category="group-label">
+                <span class="number">1</span>
+            </div>
+
+            <div style="grid-row: 1; grid-column: 18;" data-category="group-label">
+                <span class="number">18</span>
+            </div>
+
+            <div style="grid-row: 2; grid-column: 2;" data-category="group-label">
+                <span class="number">2</span>
+            </div>
+
+            <div style="grid-row: 2; grid-column: 13;" data-category="group-label">
+                <span class="number">13</span>
+            </div>
+
+            <div style="grid-row: 2; grid-column: 14;" data-category="group-label">
+                <span class="number">14</span>
+            </div>
+
+            <div style="grid-row: 2; grid-column: 15;" data-category="group-label">
+                <span class="number">15</span>
+            </div>
+
+            <div style="grid-row: 2; grid-column: 16;" data-category="group-label">
+                <span class="number">16</span>
+            </div>
+
+            <div style="grid-row: 2; grid-column: 17;" data-category="group-label">
+                <span class="number">17</span>
+            </div>
+
+            <div style="grid-row: 2; grid-column: 13;" data-category="group-label">
+                <span class="number">13</span>
+            </div>
+
+            <div style="grid-row: 4; grid-column: 3;" data-category="group-label">
+                <span class="number">3</span>
+            </div>
+
+            <div style="grid-row: 4; grid-column: 4;" data-category="group-label">
+                <span class="number">4</span>
+            </div>
+
+            <div style="grid-row: 4; grid-column: 5;" data-category="group-label">
+                <span class="number">5</span>
+            </div>
+
+            <div style="grid-row: 4; grid-column: 6;" data-category="group-label">
+                <span class="number">6</span>
+            </div>
+
+            <div style="grid-row: 4; grid-column: 7;" data-category="group-label">
+                <span class="number">7</span>
+            </div>
+
+            <div style="grid-row: 4; grid-column: 8;" data-category="group-label">
+                <span class="number">8</span>
+            </div>
+
+            <div style="grid-row: 4; grid-column: 9;" data-category="group-label">
+                <span class="number">9</span>
+            </div>
+
+            <div style="grid-row: 4; grid-column: 10;" data-category="group-label">
+                <span class="number">10</span>
+            </div>
+
+            <div style="grid-row: 4; grid-column: 11;" data-category="group-label">
+                <span class="number">11</span>
+            </div>
+
+            <div style="grid-row: 4; grid-column: 12;" data-category="group-label">
+                <span class="number">12</span>
+            </div>
+
+
+
+            <div style="grid-row: 11; grid-column: 1 / span 2;" data-category="group-label" class="lanthanoids-box">
+                <span class="number">Lanthanoids</span>
+            </div>
+
+            <div style="grid-row: 12; grid-column: 1 / span 2;" data-category="group-label" class="actinoids-box">
+                <span class="number">Actinoids</span>
+            </div>
+
+
+
+
+
+            <!-- Table cells for elements -->
+            <div style="grid-row: 2; grid-column: 1;" class="element" data-atomic-number="1" data-category="non-metal"
+                data-element-group="non-metal">
+                <span class="atomic_number">1</span>
+                <span class="symbol">H</span>
+                <span class="name">Hydrogen</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 2; grid-column: 18;" class="element" data-atomic-number="2" data-category="non-metal"
+                data-element-group="noble-gas">
+                <span class="atomic_number">2</span>
+                <span class="symbol">He</span>
+                <span class="name">Helium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 3; grid-column: 1;" class="element" data-atomic-number="3" data-category="metal"
+                data-element-group="alkali-metal">
+                <span class="atomic_number">3</span>
+                <span class="symbol">Li</span>
+                <span class="name">Lithium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 3; grid-column: 2;" class="element" data-atomic-number="4" data-category="metal"
+                data-element-group="alkaline-earth-metal">
+                <span class="atomic_number">4</span>
+                <span class="symbol">Be</span>
+                <span class="name">Berelium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 3; grid-column: 13;" class="element" data-atomic-number="5" data-category="metal"
+                data-element-group="metalloid">
+                <span class="atomic_number">5</span>
+                <span class="symbol">B</span>
+                <span class="name">Boron</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 3; grid-column: 14;" class="element" data-atomic-number="6" data-category="non-metal"
+                data-element-group="non-metal">
+                <span class="atomic_number">6</span>
+                <span class="symbol">C</span>
+                <span class="name">Carbon</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 3; grid-column: 15;" class="element" data-atomic-number="7" data-category="non-metal"
+                data-element-group="non-metal">
+                <span class="atomic_number">7</span>
+                <span class="symbol">N</span>
+                <span class="name">Nitrogen</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 3; grid-column: 16;" class="element" data-atomic-number="8" data-category="non-metal"
+                data-element-group="non-metal">
+                <span class="atomic_number">8</span>
+                <span class="symbol">O</span>
+                <span class="name">Oxygen</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 3; grid-column: 17;" class="element" data-atomic-number="9" data-category="non-metal"
+                data-element-group="halogens">
+                <span class="atomic_number">9</span>
+                <span class="symbol">F</span>
+                <span class="name">Flourine</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 3; grid-column: 18;" class="element" data-atomic-number="10" data-category="non-metal"
+                data-element-group="noble-gas">
+                <span class="atomic_number">10</span>
+                <span class="symbol">Ne</span>
+                <span class="name">Neon</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:4; grid-column: 1;" class="element" data-atomic-number="11" data-category="metal"
+                data-element-group="alkali-metal">
+                <span class="atomic_number">11</span>
+                <span class="symbol">Na</span>
+                <span class="name">Sodium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:4; grid-column: 2;" class="element" data-atomic-number="12" data-category="metal"
+                data-element-group="alkaline-earth-metal">
+                <span class="atomic_number">12</span>
+                <span class="symbol">Mg</span>
+                <span class="name">Magnesium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:4; grid-column: 13;" class="element" data-atomic-number="13" data-category="metal">
+                <span class="atomic_number">13</span>
+                <span class="symbol">Al</span>
+                <span class="name">Aluminium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:4; grid-column: 14;" class="element" data-atomic-number="14" data-category="metal"
+                data-element-group="metalloid">
+                <span class="atomic_number">14</span>
+                <span class="symbol">Si</span>
+                <span class="name">Silicon</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:4; grid-column: 15;" class="element" data-atomic-number="15" data-category="non-metal"
+                data-element-group="non-metal">
+                <span class="atomic_number">15</span>
+                <span class="symbol">P</span>
+                <span class="name">Phosphorus</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:4; grid-column: 16;" class="element" data-atomic-number="16" data-category="non-metal"
+                data-element-group="non-metal">
+                <span class="atomic_number">16</span>
+                <span class="symbol">S</span>
+                <span class="name">Sulphur</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:4; grid-column: 17;" class="element" data-atomic-number="17" data-category="non-metal"
+                data-element-group="halogens">
+                <span class="atomic_number">17</span>
+                <span class="symbol">Cl</span>
+                <span class="name">Chlorine</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:4; grid-column: 18;" class="element" data-atomic-number="18" data-category="non-metal"
+                data-element-group="noble-gas">
+                <span class="atomic_number">18</span>
+                <span class="symbol">Ar</span>
+                <span class="name">Argon</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:5; grid-column: 1;" class="element" data-atomic-number="19" data-category="metal"
+                data-element-group="alkali-metal">
+                <span class="atomic_number">19</span>
+                <span class="symbol">K</span>
+                <span class="name">Potassium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:5; grid-column: 2;" class="element" data-atomic-number="20" data-category="metal"
+                data-element-group="alkaline-earth-metal">
+                <span class="atomic_number">20</span>
+                <span class="symbol">Ca</span>
+                <span class="name">Calcium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:5; grid-column: 3;" class="element" data-atomic-number="21" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">21</span>
+                <span class="symbol">Sc</span>
+                <span class="name">Scandium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:5; grid-column: 4;" class="element" data-atomic-number="22" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">22</span>
+                <span class="symbol">Ti</span>
+                <span class="name">Titanium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:5; grid-column: 5;" class="element" data-atomic-number="23" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">23</span>
+                <span class="symbol">V</span>
+                <span class="name">Vanadium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:5; grid-column: 6;" class="element" data-atomic-number="24" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">24</span>
+                <span class="symbol">Cr</span>
+                <span class="name">Chromium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:5; grid-column: 7;" class="element" data-atomic-number="25" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">25</span>
+                <span class="symbol">Mn</span>
+                <span class="name">Manganese</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:5; grid-column: 8;" class="element" data-atomic-number="26" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">26</span>
+                <span class="symbol">Fe</span>
+                <span class="name">Iron</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:5; grid-column: 9;" class="element" data-atomic-number="27" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">27</span>
+                <span class="symbol">Co</span>
+                <span class="name">Cobalt</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:5; grid-column: 10;" class="element" data-atomic-number="28" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">28</span>
+                <span class="symbol">Ni</span>
+                <span class="name">Nickel</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:5; grid-column: 11;" class="element" data-atomic-number="29" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">29</span>
+                <span class="symbol">Cu</span>
+                <span class="name">Copper</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:5; grid-column: 12;" class="element" data-atomic-number="30" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">30</span>
+                <span class="symbol">Zn</span>
+                <span class="name">Zinc</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:5; grid-column: 13;" class="element" data-atomic-number="31" data-category="metal">
+                <span class="atomic_number">31</span>
+                <span class="symbol">Ga</span>
+                <span class="name">Gallium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:5; grid-column: 14;" class="element" data-atomic-number="32" data-category="metal"
+                data-element-group="metalloid">
+                <span class="atomic_number">32</span>
+                <span class="symbol">Ge</span>
+                <span class="name">Germanium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:5; grid-column: 15;" class="element" data-atomic-number="33" data-category="metal"
+                data-element-group="metalloid">
+                <span class="atomic_number">33</span>
+                <span class="symbol">As</span>
+                <span class="name">Arsenic</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:5; grid-column: 16;" class="element" data-atomic-number="34" data-category="non-metal"
+                data-element-group="non-metal">
+                <span class="atomic_number">34</span>
+                <span class="symbol">Se</span>
+                <span class="name">Selenium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:5; grid-column: 17;" class="element" data-atomic-number="35" data-category="non-metal"
+                data-element-group="halogens">
+                <span class="atomic_number">35</span>
+                <span class="symbol">Br</span>
+                <span class="name">Bromine</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:5; grid-column: 18;" class="element" data-atomic-number="36" data-category="non-metal"
+                data-element-group="noble-gas">
+                <span class="atomic_number">36</span>
+                <span class="symbol">Kr</span>
+                <span class="name">Krypton</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:6; grid-column: 1;" class="element" data-atomic-number="37" data-category="metal"
+                data-element-group="alkali-metal">
+                <span class="atomic_number">37</span>
+                <span class="symbol">Rb</span>
+                <span class="name">Rubidium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:6; grid-column: 2;" class="element" data-atomic-number="38" data-category="metal"
+                data-element-group="alkaline-earth-metal">
+                <span class="atomic_number">38</span>
+                <span class="symbol">Sr</span>
+                <span class="name">Strontium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:6; grid-column: 3;" class="element" data-atomic-number="39" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">39</span>
+                <span class="symbol">Y</span>
+                <span class="name">Yttrium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:6; grid-column: 4;" class="element" data-atomic-number="40" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">40</span>
+                <span class="symbol">Zr</span>
+                <span class="name">Zirconium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:6; grid-column: 5;" class="element" data-atomic-number="41" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">41</span>
+                <span class="symbol">Nb</span>
+                <span class="name">Niobium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:6; grid-column: 6;" class="element" data-atomic-number="42" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">42</span>
+                <span class="symbol">Mo</span>
+                <span class="name">Molybdenum</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:6; grid-column: 7;" class="element" data-atomic-number="43" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">43</span>
+                <span class="symbol">Tc</span>
+                <span class="name">Technetium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:6; grid-column: 8;" class="element" data-atomic-number="44" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">44</span>
+                <span class="symbol">Ru</span>
+                <span class="name">Ruthenium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:6; grid-column: 9;" class="element" data-atomic-number="45" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">45</span>
+                <span class="symbol">Rh</span>
+                <span class="name">Rhodium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:6; grid-column: 10;" class="element" data-atomic-number="46" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">46</span>
+                <span class="symbol">Pd</span>
+                <span class="name">Palladium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:6; grid-column: 11;" class="element" data-atomic-number="47" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">47</span>
+                <span class="symbol">Ag</span>
+                <span class="name">Silver</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:6; grid-column: 12;" class="element" data-atomic-number="48" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">48</span>
+                <span class="symbol">Cd</span>
+                <span class="name">Cadmium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:6; grid-column: 13;" class="element" data-atomic-number="49" data-category="metal">
+                <span class="atomic_number">49</span>
+                <span class="symbol">In</span>
+                <span class="name">Indium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:6; grid-column: 14;" class="element" data-atomic-number="50" data-category="metal">
+                <span class="atomic_number">50</span>
+                <span class="symbol">Sn</span>
+                <span class="name">Tin</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:6; grid-column: 15;" class="element" data-atomic-number="51" data-category="metal"
+                data-element-group="metalloid">
+                <span class="atomic_number">51</span>
+                <span class="symbol">Sb</span>
+                <span class="name">Antimony</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:6; grid-column: 16;" class="element" data-atomic-number="52" data-category="metal"
+                data-element-group="metalloid">
+                <span class="atomic_number">52</span>
+                <span class="symbol">Te</span>
+                <span class="name">Tellurium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:6; grid-column: 17;" class="element" data-atomic-number="53" data-category="non-metal"
+                data-element-group="halogens">
+                <span class="atomic_number">53</span>
+                <span class="symbol">I</span>
+                <span class="name">Iodine</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:6; grid-column: 18;" class="element" data-atomic-number="54" data-category="non-metal"
+                data-element-group="noble-gas">
+                <span class="atomic_number">54</span>
+                <span class="symbol">Xe</span>
+                <span class="name">Xenon</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:7; grid-column: 1;" class="element" data-atomic-number="55" data-category="metal"
+                data-element-group="alkali-metal">
+                <span class="atomic_number">55</span>
+                <span class="symbol">Cs</span>
+                <span class="name">Cesium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:7; grid-column: 2;" class="element" data-atomic-number="56" data-category="metal"
+                data-element-group="alkaline-earth-metal">
+                <span class="atomic_number">56</span>
+                <span class="symbol">Ba</span>
+                <span class="name">Barium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:7; grid-column: 3;" class="element" data-atomic-number="57-71"
+                data-element-group="lanthanoid">
+                <span class="atomic_number">57-71</span>
+                <span class="symbol"></span>
+                <span class="name">Lanthanoid series</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 11; grid-column: 3;" class="element" data-atomic-number="57" data-category="metal"
+                data-element-group="lanthanoid">
+                <span class="atomic_number">57</span>
+                <span class="symbol">La</span>
+                <span class="name">Lanthanum</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 11; grid-column: 4;" class="element" data-atomic-number="58" data-category="metal"
+                data-element-group="lanthanoid">
+                <span class="atomic_number">58</span>
+                <span class="symbol">Ce</span>
+                <span class="name">Cerium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 11; grid-column: 5;" class="element" data-atomic-number="59" data-category="metal"
+                data-element-group="lanthanoid">
+                <span class="atomic_number">59</span>
+                <span class="symbol">Pr</span>
+                <span class="name">Praseodymium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 11; grid-column: 6;" class="element" data-atomic-number="60" data-category="metal"
+                data-element-group="lanthanoid">
+                <span class="atomic_number">60</span>
+                <span class="symbol">Nd</span>
+                <span class="name">Neodymium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 11; grid-column: 7;" class="element" data-atomic-number="61" data-category="metal"
+                data-element-group="lanthanoid">
+                <span class="atomic_number">61</span>
+                <span class="symbol">Pm</span>
+                <span class="name">Promethium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 11; grid-column: 8;" class="element" data-atomic-number="62" data-category="metal"
+                data-element-group="lanthanoid">
+                <span class="atomic_number">62</span>
+                <span class="symbol">Sm</span>
+                <span class="name">Samarium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 11; grid-column: 9;" class="element" data-atomic-number="63" data-category="metal"
+                data-element-group="lanthanoid">
+                <span class="atomic_number">63</span>
+                <span class="symbol">Eu</span>
+                <span class="name">Europium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 11; grid-column: 10;" class="element" data-atomic-number="64" data-category="metal"
+                data-element-group="lanthanoid">
+                <span class="atomic_number">64</span>
+                <span class="symbol">Gd</span>
+                <span class="name">Gadolinium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 11; grid-column: 11;" class="element" data-atomic-number="65" data-category="metal"
+                data-element-group="lanthanoid">
+                <span class="atomic_number">65</span>
+                <span class="symbol">Tb</span>
+                <span class="name">Terbium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 11; grid-column: 12;" class="element" data-atomic-number="66" data-category="metal"
+                data-element-group="lanthanoid">
+                <span class="atomic_number">66</span>
+                <span class="symbol">Dy</span>
+                <span class="name">Dysprosium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 11; grid-column: 13;" class="element" data-atomic-number="67" data-category="metal"
+                data-element-group="lanthanoid">
+                <span class="atomic_number">67</span>
+                <span class="symbol">Ho</span>
+                <span class="name">Holmium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 11; grid-column: 14;" class="element" data-atomic-number="68" data-category="metal"
+                data-element-group="lanthanoid">
+                <span class="atomic_number">68</span>
+                <span class="symbol">Hr</span>
+                <span class="name">Erbium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 11; grid-column: 15;" class="element" data-atomic-number="69" data-category="metal"
+                data-element-group="lanthanoid">
+                <span class="atomic_number">69</span>
+                <span class="symbol">Tm</span>
+                <span class="name">Thulium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 11; grid-column: 16;" class="element" data-atomic-number="70" data-category="metal"
+                data-element-group="lanthanoid">
+                <span class="atomic_number">70</span>
+                <span class="symbol">Yb</span>
+                <span class="name">Ytterbium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 11; grid-column: 17;" class="element" data-atomic-number="71" data-category="metal"
+                data-element-group="lanthanoid">
+                <span class="atomic_number">71</span>
+                <span class="symbol">Lu</span>
+                <span class="name">Lutetium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:7; grid-column: 4;" class="element" data-atomic-number="72" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">72</span>
+                <span class="symbol">Hf</span>
+                <span class="name">Hafnium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:7; grid-column: 5;" class="element" data-atomic-number="73" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">73</span>
+                <span class="symbol">Ta</span>
+                <span class="name">Tantalum</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:7; grid-column: 6;" class="element" data-atomic-number="74" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">74</span>
+                <span class="symbol">W</span>
+                <span class="name">Tungsten</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:7; grid-column: 7;" class="element" data-atomic-number="75" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">75</span>
+                <span class="symbol">Re</span>
+                <span class="name">Rhenium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:7; grid-column: 8;" class="element" data-atomic-number="76" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">76</span>
+                <span class="symbol">Os</span>
+                <span class="name">Osmium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:7; grid-column: 9;" class="element" data-atomic-number="77" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">77</span>
+                <span class="symbol">Ir</span>
+                <span class="name">Iridium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:7; grid-column: 10;" class="element" data-atomic-number="78" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">78</span>
+                <span class="symbol">Pt</span>
+                <span class="name">Platinum</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:7; grid-column: 11;" class="element" data-atomic-number="79" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">79</span>
+                <span class="symbol">Au</span>
+                <span class="name">Gold</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:7; grid-column: 12;" class="element" data-atomic-number="80" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">80</span>
+                <span class="symbol">Hg</span>
+                <span class="name">Mercury</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:7; grid-column: 13;" class="element" data-atomic-number="81" data-category="metal">
+                <span class="atomic_number">81</span>
+                <span class="symbol">Tl</span>
+                <span class="name">Thallium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:7; grid-column: 14;" class="element" data-atomic-number="82" data-category="metal">
+                <span class="atomic_number">82</span>
+                <span class="symbol">Pb</span>
+                <span class="name">Lead</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:7; grid-column: 15;" class="element" data-atomic-number="83" data-category="metal">
+                <span class="atomic_number">83</span>
+                <span class="symbol">Bi</span>
+                <span class="name">Bismuth</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:7; grid-column: 16;" class="element" data-atomic-number="84" data-category="metal"
+                data-element-group="metalloid">
+                <span class="atomic_number">84</span>
+                <span class="symbol">Po</span>
+                <span class="name">Polonium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:7; grid-column: 17;" class="element" data-atomic-number="85" data-category="non-metal"
+                data-element-group="halogens">
+                <span class="atomic_number">85</span>
+                <span class="symbol">At</span>
+                <span class="name">Astatine</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row:7; grid-column: 18;" class="element" data-atomic-number="86" data-category="non-metal"
+                data-element-group="noble-gas">
+                <span class="atomic_number">86</span>
+                <span class="symbol">Rn</span>
+                <span class="name">Radon</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 8; grid-column: 1;" class="element" data-atomic-number="87" data-category="metal"
+                data-element-group="alkali-metal">
+                <span class="atomic_number">87</span>
+                <span class="symbol">Fr</span>
+                <span class="name">Francium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 8; grid-column: 2;" class="element" data-atomic-number="88" data-category="metal"
+                data-element-group="alkaline-earth-metal">
+                <span class="atomic_number">88</span>
+                <span class="symbol">Ra</span>
+                <span class="name">Radium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 8; grid-column: 3;" class="element" data-atomic-number="89-103"
+                data-category="actinoid" data-element-group="actinoid">
+                <span class="atomic_number">89-103</span>
+                <span class="symbol"></span>
+                <span class="name">Actinoid Series</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 12; grid-column: 3;" class="element" data-atomic-number="89" data-category="actinoid"
+                data-element-group="actinoid">
+                <span class="atomic_number">89</span>
+                <span class="symbol">Ac</span>
+                <span class="name">Actinium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 12; grid-column: 4;" class="element" data-atomic-number="90" data-category="actinoid"
+                data-element-group="actinoid">
+                <span class="atomic_number">90</span>
+                <span class="symbol">Th</span>
+                <span class="name">Thorium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 12; grid-column: 5;" class="element" data-atomic-number="91" data-category="actinoid"
+                data-element-group="actinoid">
+                <span class="atomic_number">91</span>
+                <span class="symbol">Pa</span>
+                <span class="name">Protactinium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 12; grid-column: 6;" class="element" data-atomic-number="92" data-category="actinoid"
+                data-element-group="actinoid">
+                <span class="atomic_number">92</span>
+                <span class="symbol">U</span>
+                <span class="name">Uranium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 12; grid-column: 7;" class="element" data-atomic-number="93" data-category="actinoid"
+                data-element-group="actinoid">
+                <span class="atomic_number">93</span>
+                <span class="symbol">Np</span>
+                <span class="name">Neptunium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 12; grid-column: 8;" class="element" data-atomic-number="94" data-category="actinoid"
+                data-element-group="actinoid">
+                <span class="atomic_number">94</span>
+                <span class="symbol">Pu</span>
+                <span class="name">Plutonium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 12; grid-column: 9;" class="element" data-atomic-number="95" data-category="actinoid"
+                data-element-group="actinoid">
+                <span class="atomic_number">95</span>
+                <span class="symbol">Am</span>
+                <span class="name">Americium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 12; grid-column: 10;" class="element" data-atomic-number="96" data-category="actinoid"
+                data-element-group="actinoid">
+                <span class="atomic_number">96</span>
+                <span class="symbol">Cm</span>
+                <span class="name">Curium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 12; grid-column: 11;" class="element" data-atomic-number="97" data-category="actinoid"
+                data-element-group="actinoid">
+                <span class="atomic_number">97</span>
+                <span class="symbol">Bk</span>
+                <span class="name">Berkelium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 12; grid-column: 12;" class="element" data-atomic-number="98" data-category="actinoid"
+                data-element-group="actinoid">
+                <span class="atomic_number">98</span>
+                <span class="symbol">Cf</span>
+                <span class="name">Californium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 12; grid-column: 13;" class="element" data-atomic-number="99" data-category="actinoid"
+                data-element-group="actinoid">
+                <span class="atomic_number">99</span>
+                <span class="symbol">Es</span>
+                <span class="name">Einsteinium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 12; grid-column: 14;" class="element" data-atomic-number="100"
+                data-category="actinoid" data-element-group="actinoid">
+                <span class="atomic_number">100</span>
+                <span class="symbol">Fm</span>
+                <span class="name">Fermium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 12; grid-column: 15;" class="element" data-atomic-number="101"
+                data-category="actinoid" data-element-group="actinoid">
+                <span class="atomic_number">101</span>
+                <span class="symbol">Md</span>
+                <span class="name">Mendelevium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 12; grid-column: 16;" class="element" data-atomic-number="102"
+                data-category="actinoid" data-element-group="actinoid">
+                <span class="atomic_number">102</span>
+                <span class="symbol">No</span>
+                <span class="name">Nobelium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 12; grid-column: 17;" class="element" data-atomic-number="103"
+                data-category="actinoid" data-element-group="actinoid">
+                <span class="atomic_number">103</span>
+                <span class="symbol">Lr</span>
+                <span class="name">Lawrencium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 8; grid-column: 4;" class="element" data-atomic-number="104" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">104</span>
+                <span class="symbol">Rf</span>
+                <span class="name">Rutherfordium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 8; grid-column: 5;" class="element" data-atomic-number="105" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">105</span>
+                <span class="symbol">Db</span>
+                <span class="name">Dubnium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 8; grid-column: 6;" class="element" data-atomic-number="106" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">106</span>
+                <span class="symbol">Sg</span>
+                <span class="name">Seaborgium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 8; grid-column: 7;" class="element" data-atomic-number="107" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">107</span>
+                <span class="symbol">Bh</span>
+                <span class="name">Bohrium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 8; grid-column: 8;" class="element" data-atomic-number="108" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">108</span>
+                <span class="symbol">Hs</span>
+                <span class="name">Hassium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 8; grid-column: 9;" class="element" data-atomic-number="109" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">109</span>
+                <span class="symbol">Mt</span>
+                <span class="name">Meitnerium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 8; grid-column: 10;" class="element" data-atomic-number="110" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">110</span>
+                <span class="symbol">Ds</span>
+                <span class="name">Darmstadtium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 8; grid-column: 11;" class="element" data-atomic-number="111" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">111</span>
+                <span class="symbol">Rg</span>
+                <span class="name">Roentgenium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 8; grid-column: 12;" class="element" data-atomic-number="112" data-category="metal"
+                data-element-group="transition-metal">
+                <span class="atomic_number">112</span>
+                <span class="symbol">Cn</span>
+                <span class="name">Copernicium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 8; grid-column: 13;" class="element" data-atomic-number="113" data-category="metal">
+                <span class="symbol">Nh</span>
+                <span class="atomic_number">113</span>
+                <span class="name">Nihonium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 8; grid-column: 14;" class="element" data-atomic-number="114" data-category="metal">
+                <span class="symbol">Fl</span>
+                <span class="atomic_number">114</span>
+                <span class="name">Flevorium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 8; grid-column: 15;" class="element" data-atomic-number="115" data-category="metal">
+                <span class="atomic_number">115</span>
+                <span class="symbol">Mc</span>
+                <span class="name">Moscovium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 8; grid-column: 16;" class="element" data-atomic-number="116" data-category="metal">
+                <span class="atomic_number">116</span>
+                <span class="symbol">Lv</span>
+                <span class="name">Livermorium</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 8; grid-column: 17;" class="element" data-atomic-number="117"
+                data-category="non-metal" data-element-group="halogens">
+                <span class="atomic_number">117</span>
+                <span class="symbol">Ts</span>
+                <span class="name">Tennessine</span>
+            </div>
+            <!-- Add other elements here -->
+            <div style="grid-row: 8; grid-column: 18;" class="element" data-atomic-number="118"
+                data-category="non-metal" data-element-group="noble-gas">
+                <span class="atomic_number">118</span>
+                <span class="symbol">Og</span>
+                <span class="name">Oganesson</span>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

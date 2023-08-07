@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Website - Home</title>
+    <link rel="stylesheet" href="home_style.css"> <!-- Link to your CSS file -->
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <ul class="menu cf">
+                <li><a href="#home">Home</a></li>
+                <li>
+                    <a href="#services">Services</a>
+                    <ul class="submenu">
+                        <li><a href="#web-design">Web Design</a></li>
+                        <li><a href="#graphic-design">Graphic Design</a></li>
+                        <li><a href="#app">App Development</a></li>
+                        <li><a href="#marketing">Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to My Website</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut justo a nulla dignissim egestas. Duis ut
+                elementum ipsum. Nam sed malesuada quam.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Web Design</li>
+                <li>Graphic Design</li>
+                <li>App Development</li>
+                <li>Marketing</li>
+            </ul>
+        </section>
+
+        <section id="blog">
+            <h2>Latest Blog Posts</h2>
+            <div class="blog-post">
+                <h3>Post Title 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non ligula et felis dignissim
+                    tincidunt.</p>
+            </div>
+            <div class="blog-post">
+                <h3>Post Title 2</h3>
+                <p>Nulla facilisi. Suspendisse in mi et ligula commodo tincidunt nec nec odio.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices metus eu nulla gravida
+                tincidunt.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 </body>
+
 </html>
