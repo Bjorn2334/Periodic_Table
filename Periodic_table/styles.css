@@ -2,12 +2,9 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #191c32, #652665);
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
 }
 
 .periodic-table {
