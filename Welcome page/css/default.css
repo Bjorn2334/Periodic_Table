@@ -58,6 +58,12 @@ html {
   width: device-width;
 }
 
+.Logo{
+  width:110px;
+  height:20px;
+  cursor: pointer;
+}
+
 article,
 aside,
 dialog,
